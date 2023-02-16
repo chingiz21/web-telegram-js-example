@@ -42,9 +42,11 @@ function App() {
 
   const { tg } = useTelegram();
 
+  console.log(tg);
+
   useEffect(() => {
     tg.ready();
-  }, [])
+  }, [tg])
 
   return (
     <>

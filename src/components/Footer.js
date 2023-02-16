@@ -1,17 +1,12 @@
 import { IconButton } from '@mui/material'
 import React from 'react'
-import { Link, useNavigation } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import HomeIcon from '@mui/icons-material/Home';
 import PaymentIcon from '@mui/icons-material/Payment';
 import InfoIcon from '@mui/icons-material/Info';
 import EventIcon from '@mui/icons-material/Event';
 
 function Footer() {
-    const navigation = useNavigation();
-    console.log(navigation);
-
-
-
     return (
         <div className='bottom container_full blurred_container bottom'>
             <div className="container jcsb">
