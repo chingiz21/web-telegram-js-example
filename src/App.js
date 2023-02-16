@@ -5,6 +5,8 @@ import Shop from './routes/Shop';
 import Events from './routes/Events';
 import MainContainer from './container/MainContainer';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useTelegram } from './helpers/useTelegram';
 
 const router = createBrowserRouter([
   {
@@ -34,7 +36,16 @@ const router = createBrowserRouter([
 ]);
 
 
+
+
 function App() {
+
+  const { tg } = useTelegram();
+
+  useEffect(() => {
+    tg.ready();
+  }, [])
+
   return (
     <>
       <RouterProvider router={router} />

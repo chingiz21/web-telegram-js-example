@@ -9,6 +9,9 @@ import EventIcon from '@mui/icons-material/Event';
 function Footer() {
     const navigation = useNavigation();
     console.log(navigation);
+
+
+
     return (
         <div className='bottom container_full blurred_container bottom'>
             <div className="container jcsb">
